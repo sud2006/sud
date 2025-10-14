@@ -1,0 +1,22 @@
+//sayı 1 ile 100 arasında ise c kodu iel ekrana yazdır.
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    
+    
+    printf("bir sayı giriniz.\n");
+    scanf("%d",&a);
+    
+    if((a>1)&&(a<100))
+    {
+        printf("1 ile 100 arasında");
+    }
+    else
+    {
+        printf("1 ile 100 arasında değil");
+    }
+    return 0;
+}
