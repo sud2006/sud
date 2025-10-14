@@ -4,22 +4,20 @@
 
 int main()
 {
-    int a,b,c;
+    int a,b,c,max;
+    max=a;
     
     printf("üç sayı giriniz.\n");
     scanf("%d%d%d",&a,&b,&c);
     
-    if((a>b)&&(a>c))
+    if(b>max)
     {
-        printf("%d",a);
+        max=b;
     }
-    else if((b>a)&&(b>c))
+    if(c>max)
     {
-        printf("%d",b);
+        max=c;
     }
-    else if((c>a)&&(c>b))
-    {
-        printf("%d",c);
-    }
+    printf("%d",max);
     return 0;
 }
